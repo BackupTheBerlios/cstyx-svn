@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+Error codes for lvstyx VIs
+</nicomment>
+<nierror code="6000">
+Cannot obtain connection
+</nierror>
+<nierror code="6001">
+Cannot connect client
+</nierror>
+<nierror code="6003">
+Null pointer
+</nierror>
+<nierror code="6004">
+Styx error
+</nierror>
+</nidocument>

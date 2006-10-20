@@ -59,8 +59,8 @@ bool USBConnection::search(u16 vid, u16 pid)
                 _pktsize=iface->endpoint->wMaxPacketSize;
                 _inep=0x81;
                 _outep=1;
-                //usb_clear_halt(_devh,_inep);
-                //usb_clear_halt(_devh,_outep);
+                usb_clear_halt(_devh,_inep);
+                usb_clear_halt(_devh,_outep);
                 return true;
             }
         }

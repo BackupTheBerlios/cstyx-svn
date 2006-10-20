@@ -37,7 +37,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..;c:\Python24\include"
+				AdditionalIncludeDirectories="..\..\cstyx;c:\Python24\include"
 				RuntimeLibrary="2"
 				DebugInformationFormat="4"
 			/>

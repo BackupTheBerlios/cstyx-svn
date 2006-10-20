@@ -37,7 +37,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\estyx\estest"
+				AdditionalIncludeDirectories="..\..\..\estyx;..\..\..\estyx\src"
 				DebugInformationFormat="4"
 			/>
 			<Tool
@@ -148,7 +148,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\estyx\estest"
+				AdditionalIncludeDirectories="..\..\..\estyx;..\..\..\estyx\src"
 				PreprocessorDefinitions="BUILD_DLL"
 				RuntimeLibrary="3"
 				DebugInformationFormat="4"
@@ -165,7 +165,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="..\libusb.lib"
-				OutputFile="..\lvstyx\$(ProjectName).dll"
+				OutputFile="..\..\lvstyx\$(ProjectName).dll"
 			/>
 			<Tool
 				Name="VCALinkTool"

@@ -110,8 +110,8 @@ class CmdClient(Cmd2) :
         if not self.conn is None:
             print "already connected"
             return False
-        if not len(args)==1:
-            print "usage: connect <servername>"
+        if len(args)!=1:
+            print "usage: connect [usb|local]"
             return
         name=args[0]
         if name=='local':
@@ -122,6 +122,8 @@ class CmdClient(Cmd2) :
                 print "No device found"
                 return False
             self.conn=c
+        else:
+            raise Error("unknown connection name")
         self.client=pystyx.Client(self.conn)
 
     def do_quit(self, args):
@@ -139,7 +141,7 @@ class CmdClient(Cmd2) :
 def main(prog, *args) :
     import optparse
 
-    parser = optparse.OptionParser(usage="usage: %prog [options] [local|usb] [command]",
+    parser = optparse.OptionParser(usage="usage: %prog [options] [command]",
                 version="%prog"+VERSION)
     parser.add_option("-D", "--debug", dest="debug",
                   help="debugging level")

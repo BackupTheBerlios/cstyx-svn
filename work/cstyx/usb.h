@@ -66,7 +66,7 @@
 
 
 /* ensure byte-packed structures */
-#include <pshpack1.h> 
+#include "pshpack1.h"
 
 
 /* All standard descriptors have these 2 fields in common */
@@ -287,7 +287,7 @@ typedef struct usb_dev_handle usb_dev_handle;
 extern struct usb_bus *usb_busses;
 
 
-#include <poppack.h>
+#include "poppack.h"
 
 
 #ifdef __cplusplus

@@ -6,7 +6,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cstyx", "cstyx.vcproj", "{3
 		{0C964000-6823-4EDC-A743-6ED7D073042F} = {0C964000-6823-4EDC-A743-6ED7D073042F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "estest", "..\..\..\estyx\estest\estest.vcproj", "{0C964000-6823-4EDC-A743-6ED7D073042F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "estest", "..\estyx\estest\estest.vcproj", "{0C964000-6823-4EDC-A743-6ED7D073042F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

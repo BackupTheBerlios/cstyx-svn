@@ -8,6 +8,7 @@ import sys,StringIO,traceback,hexdump
 from cmd2 import Cmd2
 from optparse import OptionParser
 import pystyx
+import dsploader
 
 class Error(Exception): pass
 
@@ -125,6 +126,9 @@ class CmdClient(Cmd2) :
         else:
             raise Error("unknown connection name")
         self.client=pystyx.Client(self.conn)
+
+    def do_load5509(self,args):
+        dsploader.attemptLoad(args[0],0x451,0x5718)
 
     def do_quit(self, args):
         return True

@@ -164,8 +164,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\libusb.lib"
-				OutputFile="..\..\lvstyx\$(ProjectName).dll"
+				AdditionalDependencies="libusb.lib"
+				OutputFile="cstyx.dll"
 			/>
 			<Tool
 				Name="VCALinkTool"

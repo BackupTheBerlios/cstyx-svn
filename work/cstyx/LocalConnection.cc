@@ -2,7 +2,7 @@
 #include "LocalConnection.hh"
 
 extern "C" {
-#include <estest/estest.h>
+#include "estyx/estest/estest.h"
 }
 
 using namespace cstyx;

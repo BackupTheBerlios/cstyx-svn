@@ -29,17 +29,18 @@ void File::seek(u32 pos)
 
 int File::readAll(std::string& buf, int lim, u32 pos)
 {
-    u16 len=0;
+    int len=0;
     int got=0;
 
     if (!lim) return 0;
     seek(pos);
     while (!eof()) {
         len=lim-got;
-        if (!len) break;
+        if (len<=0) break;
         if (len>1024) len=1024;
-        read(buf,len);
-        got+=len;
+		u16 l2=len;
+        read(buf,l2);
+        got+=l2;
     }
     return got;
 }

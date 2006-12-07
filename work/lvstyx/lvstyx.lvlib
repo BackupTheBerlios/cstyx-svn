@@ -24,4 +24,12 @@
    <Item Name="lvstyx_write_path.vi" Type="VI" URL="lvstyx_write_path.vi"/>
    <Item Name="lvstyx_write_path_bool.vi" Type="VI" URL="lvstyx_write_path_bool.vi"/>
    <Item Name="lvstyx_write_path_int.vi" Type="VI" URL="lvstyx_write_path_int.vi"/>
+   <Item Name="lvstyx_read_all_path_int.vi" Type="VI" URL="lvstyx_read_all_path_int.vi"/>
+   <Item Name="lvstyx_read_all_path_hex.vi" Type="VI" URL="lvstyx_read_all_path_hex.vi"/>
+   <Item Name="lvstyx_read_all_path_bool.vi" Type="VI" URL="lvstyx_read_all_path_bool.vi"/>
+   <Item Name="lvstyx_read_all_path_float.vi" Type="VI" URL="lvstyx_read_all_path_float.vi"/>
+   <Item Name="lvstyx_open.vi" Type="VI" URL="lvstyx_open.vi"/>
+   <Item Name="lvstyx_close.vi" Type="VI" URL="lvstyx_close.vi"/>
+   <Item Name="lvstyx_read.vi" Type="VI" URL="lvstyx_read.vi"/>
+   <Item Name="lvstyx_get_file_len.vi" Type="VI" URL="lvstyx_get_file_len.vi"/>
 </Library>

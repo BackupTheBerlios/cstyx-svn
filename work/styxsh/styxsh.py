@@ -43,11 +43,16 @@ class CmdClient(Cmd2) :
             return
         print self.client.readAll(args[0])
 
-    def do_hex(self,args):
+    opts_hex=OptionParser(usage="hex [-l len] path")
+    opts_hex.add_option("-l", "--length",
+              type="int", dest="length", default=256,
+              help="number of bytes to read (default 256)")
+
+    def do_hex(self,args,opts):
         if len(args) != 1 :
-            print "usage: hex path"
+            print "usage: hex [-l len] path"
             return
-        s=self.client.readAll(args[0])
+        s=self.client.readAll(args[0],opts.length)
         print hexdump.dump(s)
         
     def do_get(self, args) :

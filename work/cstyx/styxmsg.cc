@@ -735,7 +735,7 @@ u16 cstyx_convS2M(fcall_t* f, std::string& msg)
 	size = cstyx_sizeS2M(f);
 	if(size == 0) return 0;
 	ap=(char*)malloc(size);
-	if (!*ap) return 0;
+	if (!ap) return 0;
 	p = ap;
 
 	if (f->type==Rread) {
